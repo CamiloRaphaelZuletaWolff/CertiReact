@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+</head>
+
+<body>
+    <table>
+        <caption>
+            Información General
+        </caption>
+    </table>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Campo</th>
+                <th>Detalle</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>
+                    Empresa:
+                </td>
+                <td>
+                    waveware
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    País
+                </td>
+                <td>
+                    Bolivia La Paz
+                </td>
+            </tr>
+        </tbody>
+
+
+
+        <p id="unico">
+            Identificador principal del sistema
+        </p>
+        <p class="grupo5">
+            Descripción general del módulo
+        </p>
+        <div class="grupo5">
+            Sección adicional de datos
+        </div>
+        <h2 class="grupo5">
+            Formulario de Registro
+        </h2>
+
+
+
+        <form>
+            <label>
+                Usuario:
+            </label>
+            <input type="text" id="nombre" name="nombre" />
+            <label>
+                Correo:
+            </label>
+            <input type="email" id="email" name="email" />
+            <label>
+                Comentario:
+            </label>
+            <input type="text" id="message" name="message" />
+            <input type="submit" value="Guardar" />
+        </form>
+
+
+        <br>
+        <label for="nacimiento">Fecha de ingreso</label>
+        <input name="nacimiento" id="nacimiento" type="date">
+        <br>
+
+        <label for="contra">
+            Clave de acceso
+        </label>
+        <input type="password" id="contra" name="contra" />
+
+
+        <label for="codigo">
+            PIN de verificación
+        </label>
+        <input name="codigo" id="codigo" type="texto" inputmode="numeric" maxlength="6">
+</body>
+
+</html>
