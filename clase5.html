@@ -1,0 +1,31 @@
+<form>
+    <fieldset>
+        <legend> Tipo de Licencia </legend>
+        <label for="presencial">
+            <input type="radio" value="presencial" name="modalidad"> Estándar
+        </label>
+        <label>
+            <input type="radio" value="virtual" name="modalidad"> Profesional
+        </label>
+    </fieldset>
+    <label for="turno">Categoría</label>
+    <select name="turno" id="turno">
+        <option value="A"> Opción A</option>
+        <option value="B"> Opción B</option>
+        <option valu="C"> Opción C</option>
+    </select>
+    <label for="comentario">Descripción</label>
+    <textarea name="comentario" id="comentario"></textarea> 
+    <br>
+    <button> Verificar </button>
+    <br>
+    <button type="button"></button>
+    <button type="reset"> Restablecer </button>
+    <button type="submit"> Confirmar </button>
+</form>
+
+<form action="/guardar" method="POST">
+    <label for="nombre">Identificador</label>
+    <input name="nombre" id="nombre">
+    <button type="submit"> Registrar </button>
+</form>
