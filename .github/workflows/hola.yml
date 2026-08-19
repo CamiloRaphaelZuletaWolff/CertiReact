@@ -1,0 +1,24 @@
+name: Hola Mundo
+
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  hola:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Saludar
+        run: echo "Holaaaaaa mundo"
+      - name: descargar codigo
+        uses: actions/checkout@v4
+      - name: donde estas
+        run: pwd
+      - name: Listado de archivos
+        run: ls -la
+      - name: Instalar Node
+        uses: actions/setup-node@v4
+      - name: version de Node
+        run: node --version
+      - name: version de npm
+        run: npm --version
+      
