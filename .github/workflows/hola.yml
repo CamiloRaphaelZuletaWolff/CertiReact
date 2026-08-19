@@ -8,17 +8,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Saludar
-        run: echo "Holaaaaaa mundo"
-      - name: descargar codigo
+        run: echo "Hola mundo"
+      - name: Descargar codigo
         uses: actions/checkout@v4
-      - name: donde estas
+      - name: En que carpeta estoy
         run: pwd
-      - name: Listado de archivos
+      - name: Listar archivos
         run: ls -la
       - name: Instalar Node
         uses: actions/setup-node@v4
-      - name: version de Node
-        run: node --version
-      - name: version de npm
-        run: npm --version
-      
+      - name: verificar version de node
+        run: node -v
+      - name: verificar version de npm
+        run: npm -v
